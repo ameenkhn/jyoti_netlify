@@ -25033,8 +25033,30 @@ body,
 .vl-footer6-section-area .footer-logo-area {
   padding-right: 12px;
 }
-.vl-footer6-section-area .footer-logo-area p {
+.vl-footer6-section-area .footer-logo-area > p {
   display: none;
+}
+.vl-footer6-section-area .footer-logo-area .footer-community-copy {
+  max-width: 260px;
+}
+.vl-footer6-section-area .footer-logo-area .footer-community-copy h3 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s24);
+  font-style: normal;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 24px;
+}
+.vl-footer6-section-area .footer-logo-area .footer-community-copy p {
+  display: block;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-style: normal;
+  font-weight: var(--ztc-weight-medium);
+  line-height: 28px;
 }
 .vl-footer6-section-area .footer-logo-area .footer-community-btn {
   margin-top: 0;
@@ -25111,6 +25133,9 @@ body,
   }
   .vl-footer6-section-area .footer-logo-area {
     padding-right: 0;
+  }
+  .vl-footer6-section-area .footer-logo-area .footer-community-copy {
+    max-width: 100%;
   }
   .vl-footer6-section-area .footer-logo-area .footer-community-btn {
     max-width: 100%;
