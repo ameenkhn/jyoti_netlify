@@ -851,6 +851,12 @@ body {
   margin: 0 4px 0 0;
   filter: brightness(0);
 }
+.heading6 h5 img[src*="sub-logo1.svg"] {
+  width: 14px;
+  height: 22px;
+  object-fit: contain;
+  filter: none;
+}
 .heading6 h2 {
   color: var(--ztc-text-text-17);
   font-family: var(--ztc-family-font1);
@@ -4901,6 +4907,12 @@ body {
 .hero6-section-area .hero-header6 h5 img {
   margin: 0 4px 0 0;
   filter: brightness(0) invert(1);
+}
+.hero6-section-area .hero-header6 h5 img[src*="sub-logo1.svg"] {
+  width: 14px;
+  height: 22px;
+  object-fit: contain;
+  filter: none;
 }
 .hero6-section-area .hero-header6 h2 {
   color: var(--ztc-text-text-1);
@@ -24957,6 +24969,153 @@ body,
   height: auto;
   display: block;
 }
+.jyoti-community-card {
+  margin-top: 24px;
+}
+.jyoti-community-card h3,
+.vl-footer6-section-area .jyoti-community-card h3,
+.homepage6-body .vl-offcanvas .jyoti-community-card h3 {
+  font-family: var(--ztc-family-font1);
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.jyoti-community-card p,
+.vl-footer6-section-area .jyoti-community-card p,
+.homepage6-body .vl-offcanvas .jyoti-community-card p {
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 18px;
+  opacity: 1;
+}
+.jyoti-community-btn {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--brand-sage) 0%, var(--brand-sage-soft) 100%);
+  color: #ffffff !important;
+  font-family: var(--ztc-family-font2);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 14px 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 12px 24px rgba(79, 152, 160, 0.24);
+  text-wrap: balance;
+}
+.jyoti-community-btn:hover {
+  background: linear-gradient(135deg, #6c9670 0%, var(--brand-sage) 100%);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(79, 152, 160, 0.30);
+}
+.vl-footer6-section-area .jyoti-community-card {
+  margin-top: 0;
+  padding: 20px 20px 18px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 3px solid rgba(122, 158, 126, 0.65);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 14px 28px rgba(28, 21, 30, 0.10);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.vl-footer6-section-area .jyoti-community-card h3 {
+  color: #ffffff;
+}
+.vl-footer6-section-area .jyoti-community-card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+.vl-footer6-section-area .footer-logo-area {
+  padding-right: 12px;
+}
+.vl-footer6-section-area .footer-logo-area p {
+  display: none;
+}
+.vl-footer6-section-area .footer-logo-area .footer-community-btn {
+  margin-top: 0;
+  max-width: 260px;
+  width: 100%;
+}
+.vl-footer6-section-area .footer-time-area,
+.vl-footer6-section-area .footer-widget-area {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+.vl-footer6-section-area .footer-time-area h4,
+.vl-footer6-section-area .footer-widget-area h3 {
+  min-height: 0;
+  margin: 0;
+  color: #ffffff !important;
+}
+.vl-footer6-section-area .footer-time-area ul {
+  background: rgba(248, 245, 242, 0.08) !important;
+  border: 1px solid rgba(232, 199, 200, 0.18);
+  box-shadow: none !important;
+  padding: 6px 28px 24px 28px;
+}
+.vl-footer6-section-area .footer-widget-area ul {
+  display: block;
+}
+.vl-footer6-section-area .footer-widget-area:not(.contact-widget) ul li a {
+  display: inline-block;
+  line-height: 16px;
+  padding-top: 24px;
+}
+.vl-footer6-section-area .footer-widget-area.contact-widget ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  line-height: 1.45;
+  padding-top: 24px;
+}
+.homepage6-body .vl-offcanvas .jyoti-community-card {
+  margin-top: 0;
+  padding: 20px 18px 18px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 245, 242, 0.98) 100%);
+  border: 1px solid rgba(90, 62, 77, 0.08);
+  border-top: 3px solid rgba(122, 158, 126, 0.55);
+  box-shadow: 0 16px 34px rgba(90, 62, 77, 0.08);
+}
+.homepage6-body .vl-offcanvas .jyoti-community-card h3 {
+  color: var(--brand-plum);
+}
+.homepage6-body .vl-offcanvas .jyoti-community-card p {
+  color: rgba(76, 52, 65, 0.74);
+}
+.homepage6-body .vl-offcanvas .jyoti-community-btn {
+  box-shadow: 0 14px 24px rgba(79, 152, 160, 0.18);
+}
+@media (max-width: 767px) {
+  .jyoti-community-card {
+    margin-top: 20px;
+  }
+  .jyoti-community-card h3 {
+    font-size: 20px;
+  }
+  .jyoti-community-card p {
+    font-size: 14px;
+  }
+  .jyoti-community-btn {
+    font-size: 13px;
+    padding: 13px 16px;
+  }
+  .vl-footer6-section-area .footer-logo-area {
+    padding-right: 0;
+  }
+  .vl-footer6-section-area .footer-logo-area .footer-community-btn {
+    max-width: 100%;
+  }
+}
 
 .vl-footer6-section-area .footer-widget-area ul li a {
   display: flex;
@@ -25219,6 +25378,9 @@ body,
   height: 34px;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(16%) sepia(22%) saturate(780%) hue-rotate(286deg) brightness(95%) contrast(88%);
+}
+.jyoti-home-process .vl-section-subtitle img[src*="sub-logo1.svg"] {
+  filter: none;
 }
 
 .jyoti-home-process .vl-section-subtitle svg {
