@@ -343,6 +343,38 @@ body {
     }
 }
 
+.vl-logo img[src*="dr-jyoti-logo.svg"],
+.vl-offcanvas-logo img[src*="dr-jyoti-logo.svg"],
+.footer-logo-area img[src*="dr-jyoti-logo.svg"] {
+    filter: none !important;
+}
+
+.homepage1-body .vl-transparent-header .vl-logo img[src*="dr-jyoti-logo.svg"] {
+    width: 88px;
+    height: auto;
+    max-height: 54px;
+}
+
+.vl-offcanvas-logo img[src*="dr-jyoti-logo.svg"] {
+    width: 88px;
+    height: auto;
+    max-height: 54px;
+}
+
+.footer-logo-area img[src*="dr-jyoti-logo.svg"] {
+    width: 112px;
+    height: auto;
+    max-height: 72px;
+}
+
+@media #{$xs} {
+    .homepage1-body .vl-transparent-header .vl-logo img[src*="dr-jyoti-logo.svg"],
+    .vl-offcanvas-logo img[src*="dr-jyoti-logo.svg"] {
+        width: 72px;
+        max-height: 44px;
+    }
+}
+
 .hero6-section-area {
     background: radial-gradient(circle at 0% 0%, rgba(127, 185, 190, 0.18), transparent 28%), radial-gradient(circle at 100% 10%, rgba(185, 133, 154, 0.14), transparent 24%), linear-gradient(135deg, #1C151E 0%, #27202A 46%, #312830 100%);
     .hero-header6 {
