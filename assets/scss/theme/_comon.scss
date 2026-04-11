@@ -1751,6 +1751,652 @@ body {
   overflow: visible;
 }
 
+.jyoti-gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.jyoti-patient-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.jyoti-patient-media {
+  padding: 18px 18px 0;
+}
+
+.jyoti-patient-cover {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.jyoti-patient-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.jyoti-patient-thumb,
+.jyoti-patient-more {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(122, 158, 126, 0.18);
+  background: rgba(248, 245, 242, 0.94);
+  flex: 0 0 auto;
+}
+
+.jyoti-patient-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.jyoti-patient-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #5A3E4D;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.jyoti-patient-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 20px 24px;
+
+  h3 {
+    margin: 0;
+    color: #5A3E4D;
+    font-size: 24px;
+    line-height: 1.18;
+  }
+
+  p {
+    margin: 0;
+    color: #3F3640;
+    font-size: 16px;
+    line-height: 1.75;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+  }
+}
+
+.jyoti-patient-kicker {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(122, 158, 126, 0.12);
+  color: #7A9E7E;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.jyoti-patient-subtitle {
+  font-weight: 700;
+  color: #5A3E4D;
+}
+
+.jyoti-patient-meta {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(122, 158, 126, 0.16);
+    color: #5D5560;
+    font-size: 14px;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+  }
+}
+
+.jyoti-patient-empty {
+  grid-column: 1 / -1;
+  padding: 30px 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(122, 158, 126, 0.14);
+  color: #3F3640;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1199px) {
+  .jyoti-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .jyoti-gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .jyoti-patient-media {
+    padding: 16px 16px 0;
+  }
+
+  .jyoti-patient-content {
+    padding: 18px 16px 22px;
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  .jyoti-patient-thumb,
+  .jyoti-patient-more {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.jyoti-gallery-shell {
+  display: grid;
+  gap: 34px;
+}
+
+.jyoti-gallery-hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.95fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.jyoti-gallery-hero-copy,
+.jyoti-gallery-hero-aside,
+.jyoti-gallery-spotlight-section,
+.jyoti-gallery-wall-section {
+  border-radius: 30px;
+  border: 1px solid rgba(122, 158, 126, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 245, 242, 0.92) 100%);
+  box-shadow: 0px 22px 54px rgba(90, 62, 77, 0.08);
+}
+
+.jyoti-gallery-hero-copy {
+  padding: 42px 44px;
+
+  h2 {
+    margin: 0 0 18px;
+    color: #5A3E4D;
+    font-size: 52px;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    margin: 0;
+    color: #3F3640;
+    font-size: 18px;
+    line-height: 1.85;
+  }
+}
+
+.jyoti-gallery-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 999px;
+    background: rgba(122, 158, 126, 0.1);
+    border: 1px solid rgba(122, 158, 126, 0.16);
+    color: #5A3E4D;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.jyoti-gallery-hero-aside {
+  padding: 22px;
+}
+
+.jyoti-gallery-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.jyoti-gallery-stat-card,
+.jyoti-gallery-aside-note {
+  border-radius: 22px;
+  border: 1px solid rgba(122, 158, 126, 0.14);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.jyoti-gallery-stat-card {
+  min-height: 138px;
+  padding: 22px 20px;
+
+  strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #5A3E4D;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  span {
+    display: block;
+    color: #4E4650;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+.jyoti-gallery-aside-note {
+  margin-top: 14px;
+  padding: 22px 20px;
+}
+
+.jyoti-gallery-aside-note h3,
+.jyoti-gallery-section-head h3 {
+  margin: 0 0 10px;
+  color: #5A3E4D;
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+.jyoti-gallery-aside-note p,
+.jyoti-gallery-section-head p {
+  margin: 0;
+  color: #4E4650;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.jyoti-gallery-spotlight-section,
+.jyoti-gallery-wall-section {
+  padding: 30px;
+}
+
+.jyoti-gallery-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.jyoti-gallery-spotlight-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(290px, 0.8fr);
+  gap: 22px;
+}
+
+.jyoti-gallery-feature-card,
+.jyoti-gallery-rail-card,
+.jyoti-story-card {
+  border-radius: 26px;
+  border: 1px solid rgba(122, 158, 126, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 247, 244, 0.96) 100%);
+  box-shadow: 0px 18px 42px rgba(90, 62, 77, 0.08);
+}
+
+.jyoti-gallery-feature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.92fr);
+  overflow: hidden;
+}
+
+.jyoti-gallery-feature-media,
+.jyoti-gallery-rail-media,
+.jyoti-story-media {
+  position: relative;
+}
+
+.jyoti-gallery-feature-media img,
+.jyoti-gallery-rail-media img,
+.jyoti-story-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.jyoti-gallery-feature-media img {
+  min-height: 100%;
+  aspect-ratio: 5 / 5;
+}
+
+.jyoti-gallery-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 30px 28px;
+}
+
+.jyoti-gallery-feature-copy h3,
+.jyoti-story-content h3,
+.jyoti-gallery-rail-copy h4 {
+  margin: 0;
+  color: #5A3E4D;
+  letter-spacing: -0.03em;
+}
+
+.jyoti-gallery-feature-copy h3 {
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.jyoti-gallery-feature-eyebrow,
+.jyoti-story-eyebrow {
+  margin: 0;
+  color: #7A9E7E;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.jyoti-gallery-feature-summary,
+.jyoti-story-summary {
+  margin: 0;
+  color: #2E2830;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.jyoti-gallery-feature-support,
+.jyoti-story-support {
+  margin: 0;
+  color: #5B5460;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.jyoti-story-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(122, 158, 126, 0.12);
+  color: #7A9E7E;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.jyoti-gallery-spotlight-rail {
+  display: grid;
+  gap: 16px;
+}
+
+.jyoti-gallery-rail-card {
+  display: grid;
+  grid-template-columns: 122px minmax(0, 1fr);
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.jyoti-gallery-rail-media a {
+  display: block;
+  height: 100%;
+}
+
+.jyoti-gallery-rail-media img {
+  aspect-ratio: 1 / 1;
+}
+
+.jyoti-gallery-rail-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 18px 18px 16px;
+
+  h4 {
+    font-size: 22px;
+    line-height: 1.16;
+  }
+
+  p {
+    margin: 0;
+    color: #4E4650;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+}
+
+.jyoti-gallery-masonry {
+  column-count: 3;
+  column-gap: 22px;
+}
+
+.jyoti-story-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 22px;
+  overflow: hidden;
+  break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.jyoti-story-cover {
+  position: relative;
+  display: block;
+
+  img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.jyoti-story-photo-count {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(28, 21, 30, 0.72);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.jyoti-lightbox-hidden {
+  display: none;
+}
+
+.jyoti-story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 22px 24px;
+
+  h3 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+}
+
+.jyoti-story-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
+  overflow: hidden;
+}
+
+.jyoti-story-support {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.jyoti-story-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 16px;
+    background: rgba(122, 158, 126, 0.08);
+    border: 1px solid rgba(122, 158, 126, 0.14);
+    color: #504852;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+}
+
+.jyoti-patient-empty {
+  padding: 30px 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(122, 158, 126, 0.14);
+  color: #3F3640;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1199px) {
+  .jyoti-gallery-hero-panel,
+  .jyoti-gallery-section-head,
+  .jyoti-gallery-spotlight-grid,
+  .jyoti-gallery-feature-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .jyoti-gallery-feature-media img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .jyoti-gallery-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .jyoti-gallery-hero-copy,
+  .jyoti-gallery-spotlight-section,
+  .jyoti-gallery-wall-section {
+    padding: 28px 24px;
+  }
+
+  .jyoti-gallery-hero-copy h2 {
+    font-size: 42px;
+  }
+
+  .jyoti-gallery-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .jyoti-gallery-shell {
+    gap: 24px;
+  }
+
+  .jyoti-gallery-hero-copy,
+  .jyoti-gallery-hero-aside,
+  .jyoti-gallery-spotlight-section,
+  .jyoti-gallery-wall-section {
+    border-radius: 24px;
+  }
+
+  .jyoti-gallery-hero-copy,
+  .jyoti-gallery-spotlight-section,
+  .jyoti-gallery-wall-section {
+    padding: 24px 18px;
+  }
+
+  .jyoti-gallery-hero-aside {
+    padding: 18px;
+  }
+
+  .jyoti-gallery-hero-copy h2 {
+    font-size: 34px;
+  }
+
+  .jyoti-gallery-hero-copy p,
+  .jyoti-gallery-section-head p,
+  .jyoti-gallery-aside-note p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .jyoti-gallery-stat-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .jyoti-gallery-stat-card {
+    min-height: auto;
+  }
+
+  .jyoti-gallery-rail-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .jyoti-gallery-rail-copy h4,
+  .jyoti-story-content h3 {
+    font-size: 24px;
+  }
+
+  .jyoti-gallery-masonry {
+    column-count: 1;
+  }
+
+  .jyoti-story-content {
+    padding: 18px 18px 22px;
+  }
+
+  .jyoti-story-photo-count {
+    left: 12px;
+    bottom: 12px;
+  }
+}
+
 .homepage4-body .vl-main-menu ul > li > a,
 .homepage6-body .vl-main-menu ul > li > a {
   padding-top: 2px;
