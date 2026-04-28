@@ -26731,4 +26731,49 @@ body,
     font-size: 13px;
   }
 }
+
+/* === Single-line navbar fit for 7 menu items === */
+.vl-main-menu ul {
+  white-space: nowrap;
+}
+
+.vl-main-menu ul > li > a,
+.homepage1-body .vl-main-menu ul > li > a,
+.homepage6-body .vl-main-menu ul > li > a {
+  white-space: nowrap;
+  padding: 0 14px;
+}
+
+@media (min-width: 992px) {
+  .vl-header-area .row-bg1 > .col-lg-2 {
+    flex: 0 0 auto;
+    width: 14%;
+  }
+  .vl-header-area .row-bg1 > .col-lg-7 {
+    flex: 0 0 auto;
+    width: 62%;
+  }
+  .vl-header-area .row-bg1 > .col-lg-3 {
+    flex: 0 0 auto;
+    width: 24%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .vl-main-menu ul > li > a,
+  .homepage1-body .vl-main-menu ul > li > a,
+  .homepage6-body .vl-main-menu ul > li > a {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .vl-main-menu ul > li > a,
+  .homepage1-body .vl-main-menu ul > li > a,
+  .homepage6-body .vl-main-menu ul > li > a {
+    padding: 0 7px;
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
